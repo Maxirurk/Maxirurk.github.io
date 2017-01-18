@@ -1,3 +1,15 @@
+ /*.shape1 {
+   height: 0px;
+   width: 0px;
+   border-left: 1000px solid transparent;
+   border-top: 30px solid transparent;
+   border-bottom: 200px solid white;
+   border-right: 0px solid transparent;
+   background-color: red;
+   z-index: 0;
+   position: absolute;
+
+}*/
 body{
   height: 100%;
   margin:0px;
@@ -6,31 +18,26 @@ body{
 }
 .strip{
   position: absolute;
-  height: 400%;
+  height: 200%;
   width: 100%;
   display: inline;
 }
-
-/*prima pagina*/
 .central{
   display: block;
-  height: 25%;/*610px*/;
+  height: 38.125em/*610px*/;
   width: 100%;
   margin-left: 0px;
-  overflow:  hidden;
-  position: static;
+  overflow: hidden;
+  position: absolute;
   background-color: black;
-  z-index: 999;
 }
 /*sezioni pagine home*/
 #first{
-    margin-top: -8%;
-    margin-bottom: 9%;
+    margin-top: -3.750em;
     /*height: 250px;*/
-    height: 40%;
+    height: 15.625em;
     width: 100%;
-    background-image: url("imageforsite/vetreria.jpg");
-    background-size: cover;
+    background-color: black;
     position: relative;
     overflow: hidden;
    transform: skewY(5deg);
@@ -39,33 +46,43 @@ body{
 }
 
 #second{
-  margin-top:-14%;
-  margin-bottom:-25%;
+  margin-top: -5.625em;
   /*height: 400px;*/
-  height: 60%;
+  height: 25em;
   width: 100%;
   z-index: 1;
-  background-image: url("imageforsite/dna2.jpg");
-  background-size: cover;
   background-color: black;
   position: relative;
   overflow: hidden;
-
 }
 
 #third{
-  bottom: 75%;
+  margin-top: -6.250em;
   /*height: 300px;*/
-  height: 8.3%;
+  height: 18.750em;
   width: 100%;
   background-color: black;
-  position: absolute;
+  position: relative;
   overflow: hidden;
   transform: skewY(-5deg);
   z-index: 2;
   border-top: 0.938em solid black;
-  background-image: url("imageforsite/blood.jpg");
-  background-size: cover;
+}
+/*effetti zoom*/
+.shape img {
+    -webkit-transition: all 1s ease; /* Safari e Chrome */
+    -moz-transition: all 1s ease; /* Firefox */
+    -ms-transition: all 1s ease; /* IE 9 */
+    -o-transition: all 1s ease; /* Opera */
+    transition: all 1s ease;
+}
+
+.shape:hover img {
+    -webkit-transform:scale(1.25); /* Safari e Chrome */
+    -moz-transform:scale(1.25); /* Firefox */
+    -ms-transform:scale(1.25); /* IE 9 */
+    -o-transform:scale(1.25); /* Opera */
+     transform:scale(1.25);
 }
 
 /*fine struttura menu*/
@@ -110,14 +127,15 @@ body{
 /*prima pagina*/
 
 .lab{
-  height: 25%;
+  height: 38.125em;
   width: 100%;
+  margin-top:38.125em;
   position: static;
   display: block;
   overflow: hidden;
 }
 #lab_image{
-  margin-top: 20%;
+  top:49.125em;
   height: auto;
   width: 40%;
   left: 0%;
@@ -176,8 +194,9 @@ body{
 
 
 .ricerca{
-  height: 25%;
+  height: 50%;
   width: 100%;
+  margin-top:0px;
   position: static;
   display: block;
   overflow: hidden;
@@ -209,12 +228,13 @@ body{
 
 
 .membri{
-  height: 25%;
+  height: 50%;
   width: 100%;
+  margin-top:0px;
   position: static;
-  display:inline-block;
+  display: block;
   background-image: url(imageforsite/dnayellow.jpg);
-  background-size: cover;
+  background-size:cover;
   background-repeat: no-repeat;
 }
 #membri_title{
@@ -223,53 +243,17 @@ body{
   width: 100%;
   text-align: center;
 }
-.membri_elementi{
-  background-color: transparent;
-  margin-top: 5em;
-  position: static;
-  height: 4em;
-}
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: rgba(27, 27, 27, 0.86);
-    color: rgb(255, 255, 255);
-    overflow: overlay;
-    width: 100%;
-    height: 15%;
-    right: 0%;
-    text-overflow: ellipsis;
-    float: left;
-    text-align: left;
-}
 
-.photo:hover .dropdown-content {
-    display: block;
-}
-.photo:hover img{
-  border: 0.4em solid green;
-}
-.photo>img{
-  width: 35%;
-  border-radius: 100%;
-
-}
 .photo{
-  margin-top: 1%;
+  position: absolute;
+  display: inline-block;
+  background-color: white;
+  width: 20em;
+  height: 3em;
 
 }
-#first_member{
-  float: left;
-  width: 30%;
-
-}
-
-#second_member{
-  float: right;
-  width: 30%;
-}
-
-#third_member{
-  float: auto;
-  width: 30%;
+.photo>p{
+  position: absolute;
+  color: black;
+  z-index: 9;
 }
