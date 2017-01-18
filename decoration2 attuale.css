@@ -1,0 +1,275 @@
+body{
+  height: 100%;
+  margin:0px;
+  padding: 0px;
+  background-color: black;
+}
+.strip{
+  position: absolute;
+  height: 400%;
+  width: 100%;
+  display: inline;
+}
+
+/*prima pagina*/
+.central{
+  display: block;
+  height: 25%;/*610px*/;
+  width: 100%;
+  margin-left: 0px;
+  overflow:  hidden;
+  position: static;
+  background-color: black;
+  z-index: 999;
+}
+/*sezioni pagine home*/
+#first{
+    margin-top: -8%;
+    margin-bottom: 9%;
+    /*height: 250px;*/
+    height: 40%;
+    width: 100%;
+    background-image: url("imageforsite/vetreria.jpg");
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+   transform: skewY(5deg);
+   z-index: 2;
+   border-bottom: 15px solid black;
+}
+
+#second{
+  margin-top:-14%;
+  margin-bottom:-25%;
+  /*height: 400px;*/
+  height: 60%;
+  width: 100%;
+  z-index: 1;
+  background-image: url("imageforsite/dna2.jpg");
+  background-size: cover;
+  background-color: black;
+  position: relative;
+  overflow: hidden;
+
+}
+
+#third{
+  bottom: 75%;
+  /*height: 300px;*/
+  height: 8.3%;
+  width: 100%;
+  background-color: black;
+  position: absolute;
+  overflow: hidden;
+  transform: skewY(-5deg);
+  z-index: 2;
+  border-top: 0.938em solid black;
+  background-image: url("imageforsite/blood.jpg");
+  background-size: cover;
+}
+
+/*fine struttura menu*/
+
+.menu{
+
+  height: 1.875em;
+  width: 5.625em;
+  border: 0.250em solid black;
+  position: absolute;
+  z-index: 9;
+  padding: 0px;
+  text-align: center;
+  text-decoration: none;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  border-radius: 20%;
+}
+.menu:hover{
+  background-color: rgba(159, 155, 155, 0.69);
+}
+#menu_first{
+  margin-top: 9.375em;
+  transform: skewY(-5deg);
+  margin-left:80%;
+
+  color: black;
+}
+#menu_second{
+  margin-top: 12.500em;
+  margin-left: 10%;
+  color: yellow;
+}
+#menu_third{
+  margin-top: 2.500em;
+  margin-left: 80%;
+  transform: skewY(5deg);
+  color:violet;
+
+}
+
+/*prima pagina*/
+
+.lab{
+  height: 25%;
+  width: 100%;
+  position: static;
+  display: block;
+  overflow: hidden;
+}
+#lab_image{
+  margin-top: 20%;
+  height: auto;
+  width: 40%;
+  left: 0%;
+  position: absolute;
+}
+#lab_title{
+  margin-top:0px;
+  width: 100%;
+  position: absolute;
+  color: white;
+  text-align: center;
+}
+#lab_text {
+  margin-top: 10em;
+  position: absolute;
+  color: white;
+  float: right;
+  width: 30%;
+  right: 10%;
+
+    -webkit-animation: fadein 3s; /* Safari, Chrome and Opera > 12.1 */
+       -moz-animation: fadein 3s; /* Firefox < 16 */
+        -ms-animation: fadein 3s; /* Internet Explorer */
+         -o-animation: fadein 3s; /* Opera < 12.1 */
+            animation: fadein 3s;
+}
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Internet Explorer */
+@-ms-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Opera < 12.1 */
+@-o-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+
+.ricerca{
+  height: 25%;
+  width: 100%;
+  position: static;
+  display: block;
+  overflow: hidden;
+}
+
+
+#ricerca_image1{
+  top: 10%;
+  width: 50%;
+  position: relative;
+  z-index: 3;
+}
+#ricerca_image2{
+  float: right;
+  right: 0%;
+  top: 60%;
+  width: 50%;
+  position: relative;
+}
+#ricerca_title{
+  position: absolute;
+  color:white;
+  width: 100%;
+  text-align: center;
+}
+
+
+
+
+
+.membri{
+  height: 25%;
+  width: 100%;
+  position: static;
+  display:inline-block;
+  background-image: url(imageforsite/dnayellow.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#membri_title{
+  position: absolute;
+  color: white;
+  width: 100%;
+  text-align: center;
+}
+.membri_elementi{
+  background-color: transparent;
+  margin-top: 5em;
+  position: static;
+  height: 4em;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: rgba(27, 27, 27, 0.86);
+    color: rgb(255, 255, 255);
+    overflow: overlay;
+    width: 100%;
+    height: 15%;
+    right: 0%;
+    text-overflow: ellipsis;
+    float: left;
+    text-align: left;
+}
+
+.photo:hover .dropdown-content {
+    display: block;
+}
+.photo:hover img{
+  border: 0.4em solid green;
+}
+.photo>img{
+  width: 35%;
+  border-radius: 100%;
+
+}
+.photo{
+  margin-top: 1%;
+
+}
+#first_member{
+  float: left;
+  width: 30%;
+
+}
+
+#second_member{
+  float: right;
+  width: 30%;
+}
+
+#third_member{
+  float: auto;
+  width: 30%;
+}
